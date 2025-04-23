@@ -1,0 +1,27 @@
+{"productos": [
+  {
+    "id": 1,
+    "title": "Cocina Linea Splendour",
+    "description": "Desarrollada para clientes que requieren acabados de alta especificacion y modernidad.",
+    "image": "assets/Cocinas/CocinaAltobrillo.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Cocina Linea Bliss",
+    "description": "Permite un gran numero de acabados en colores sólidos o acabados en laminados de imitación madera.",
+    "image": "assets/Cocinas/CocinaClasicaMG.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Cocina Linea Bliss",
+    "description": "Permite un gran numero de acabados en colores sólidos o acabados en laminados de imitación madera.",
+    "image": "assets/Cocinas/CocinaConPestaña.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Cocina Linea Bliss",
+    "description": "Permite un gran numero de acabados en colores sólidos o acabados en laminados de imitación madera.",
+    "image": "assets/Cocinas/CocinaSinManija.jpeg"
+  }
+]}
+    

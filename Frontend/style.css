@@ -1,0 +1,7 @@
+.navegador{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-family:cursive;
+    margin: 25px;
+}
