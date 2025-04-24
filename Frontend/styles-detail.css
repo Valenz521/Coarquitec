@@ -15,6 +15,23 @@
     border-radius: 15px;
 }
 
+.div-boton {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    width: 90px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #777799;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 
 /* ESTILOS PARA LA ANIMACION  */
 .sparkle {

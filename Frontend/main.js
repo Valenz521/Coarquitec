@@ -61,7 +61,10 @@ fetch('./data.json')
       <img src="${producto.image}" alt="${producto.title}">
         <h2>${producto.title}</h2>
         <p>${producto.description}</p>
+        <div> 
         <button data-id="${producto.id}">Ver más</button>  
+        </div>
+        
       `;
 
       const button = card.querySelector('button');
