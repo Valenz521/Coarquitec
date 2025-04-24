@@ -1,9 +1,18 @@
 .navegador{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
     font-size: 25px;
-    font-family:cursive;
-    margin: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    z-index: 1000; 
+
 }
 
 .card{
@@ -12,7 +21,6 @@
     width: 150px;
     border-radius: 8px;
     padding: 50px;
-    background: radial-gradient(#ABB9E4,#D460DB );
     grid-template-columns: repeat(5,1fr);
     gap: 20px;
     display: flex;
@@ -26,5 +34,29 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 50px;
+}
+
+.logo_imag{
+    height: 80px; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.cocina{
+    width: 1350px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
