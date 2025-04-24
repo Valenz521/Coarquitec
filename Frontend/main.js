@@ -61,9 +61,13 @@ fetch('./data.json')
       <img src="${producto.image}" alt="${producto.title}">
         <h2>${producto.title}</h2>
         <p>${producto.description}</p>
-        <button>Ver mas</button>
-        
+        <button data-id="${producto.id}">Ver más</button>  
       `;
+
+      const button = card.querySelector('button');
+      button.addEventListener('click', () => {
+        window.location.href = `detail.html?id=${producto.id}`;
+      });
 
       cardsContainer.appendChild(card);
     });

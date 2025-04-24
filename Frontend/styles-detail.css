@@ -1,0 +1,71 @@
+.contenedor {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-detail {
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 80%;
+}
+.contenedor-detail img {
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+}
+
+
+/* ESTILOS PARA LA ANIMACION  */
+.sparkle {
+    position: absolute;
+    animation: sparkle-animation 1.5s ease-out forwards;
+    font-size: 24px;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  @keyframes sparkle-animation {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-80px) scale(0.5);
+    }
+  }
+  
+  #mensaje-exito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #4CAF50;
+    padding: 20px 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    z-index: 1000;
+    animation: mensajeFade 2s ease-out forwards;
+  }
+  
+  @keyframes mensajeFade {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 0;
+    }
+  }
+  
