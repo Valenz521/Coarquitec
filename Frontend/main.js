@@ -45,3 +45,12 @@ fetch("http://localhost:3000/coarquitec/productos/")
     });
   })
   .catch((error) => console.error("Error cargando productos:", error));
+
+
+  fetch('footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer-container').innerHTML = data;
+  })
+  .catch(err => console.error('Error al cargar el footer:', err));
+

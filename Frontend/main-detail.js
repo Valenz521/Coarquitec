@@ -46,3 +46,18 @@ function showMensaje() {
   document.body.appendChild(mensaje);
   setTimeout(() => mensaje.remove(), 2000);
 }
+
+//Para poner el nav de una forma dinamica
+// fetch('nav.html')
+//   .then(res => res.text())
+//   .then(data => {
+//     document.getElementById('nav-container').innerHTML = data;
+//   })
+//   .catch(err => console.error('Error al cargar el nav:', err));
+
+fetch("footer.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("footer-container").innerHTML = data;
+  })
+  .catch((err) => console.error("Error al cargar el footer:", err));
