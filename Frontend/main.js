@@ -48,10 +48,13 @@ const cardsContainer = document.createElement('div');
 cardsContainer.classList.add('contenedor-cards');
 container.appendChild(cardsContainer);
 
-fetch('./data.json')
+// fetch('./data.json')
+fetch('http://localhost:3000/coarquitec/productos/')
   .then(res => res.json())
   .then(data => {
-    const productos = data.productos;
+    const productos = data.data;
+
+    console.log(data)
 
     productos.forEach(producto => {
       const card = document.createElement('div');
