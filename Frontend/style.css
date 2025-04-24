@@ -5,3 +5,26 @@
     font-family:cursive;
     margin: 25px;
 }
+
+.card{
+    background-color: #eee;
+    border: 1px solid #ddd;
+    width: 150px;
+    border-radius: 8px;
+    padding: 50px;
+    background: radial-gradient(#ABB9E4,#D460DB );
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+
