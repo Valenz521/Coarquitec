@@ -1,7 +1,99 @@
-.navegador{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 25px;
-    font-family:cursive;
-    margin: 25px;
+/* .navegador {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  font-family: cursive;
+  margin: 25px;
+} */
+
+.contenedor-cards {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.card {
+  /* border: 1px solid green; */
+  border-radius: 15px;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card div {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 30px;
+  width: 90px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #777799;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.container h2 {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Para el nav */
+
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo_imag {
+  height: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.cocina {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }

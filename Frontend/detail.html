@@ -3,34 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COARQUITEC</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Detalles</title>
+    <link rel="stylesheet" href="styles-detail.css" />
   </head>
   <body>
+    <!-- <div id="nav-container"></div> -->
+
     <nav class="navegador">
       <div class="logo">
         <img src="./assets/Logo.jpeg" alt="Logo" class="logo_imag" />
       </div>
       <div class="enlaces">
         <a href="">Inicio</a>
-        <a href="">Catalagos</a>
         <a href="">Contacto</a>
       </div>
     </nav>
-    <header>
-      <img
-        src="./assets/Cocinas/Diseño cocina.jpeg"
-        alt="Imagen cocina"
-        class="cocina"
-      />
-    </header>
 
-    <div class="container">
-      <h2>Catalogos</h2>
+    <div class="contenedor">
+      <div class="contenedor-detail">
+        <img id="detail-img" />
+        <h2 id="detail-title"></h2>
+        <p id="detail-desc"></p>
+        <div class="div-boton">
+          <button id="button">Lo quiero!</button>
+        </div>
+      </div>
     </div>
-    <div id="productos" class="grid"></div>
 
     <div id="footer-container"></div>
   </body>
-  <script type="module" src="main.js"></script>
+
+  <script src="main-detail.js"></script>
 </html>
