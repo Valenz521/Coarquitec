@@ -6,6 +6,23 @@
     margin: 25px;
 }
 
+.contenedor-cards {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .card {
     border: 1px solid green;
+    border-radius: 15px;
+    width: 350px;
+    height: 450px;
 }
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }

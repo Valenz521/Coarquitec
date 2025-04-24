@@ -18,7 +18,35 @@
 // }
 
 
+// const container = document.getElementById('productos');
+
+// fetch('./data.json')
+//   .then(res => res.json())
+//   .then(data => {
+//     const productos = data.productos;
+
+//     productos.forEach(producto => {
+//       const card = document.createElement('div');
+//       card.classList.add('card');
+
+//       card.innerHTML = `
+//         <h2>${producto.title}</h2>
+//         <p>${producto.description}</p>
+//         <img src="${producto.image}" alt="${producto.title}">
+//       `;
+
+//       container.appendChild(card);
+//     });
+//   })
+//   .catch(error => console.error('Error cargando productos:', error));
+
+
 const container = document.getElementById('productos');
+
+// Crear un contenedor interno para las cards
+const cardsContainer = document.createElement('div');
+cardsContainer.classList.add('contenedor-cards');
+container.appendChild(cardsContainer);
 
 fetch('./data.json')
   .then(res => res.json())
@@ -30,12 +58,15 @@ fetch('./data.json')
       card.classList.add('card');
 
       card.innerHTML = `
+      <img src="${producto.image}" alt="${producto.title}">
         <h2>${producto.title}</h2>
         <p>${producto.description}</p>
-        <img src="${producto.image}" alt="${producto.title}">
+        <button>Ver mas</button>
+        
       `;
 
-      container.appendChild(card);
+      cardsContainer.appendChild(card);
     });
   })
   .catch(error => console.error('Error cargando productos:', error));
+
