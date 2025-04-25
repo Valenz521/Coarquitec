@@ -30,4 +30,33 @@
     height: auto;
     padding: 45px;
 }
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
   
+  .footer p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* espacio entre íconos */
+    margin-top: 10px;
+  }
+  
+  .redes-sociales a {
+    color: #fff;
+    font-size: 32px; /* ¡más grandes! */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #1db954; /* color al pasar el mouse */
+  }

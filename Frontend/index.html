@@ -4,23 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COARQUITEC</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navegador">
-     <div class="logo">   
-      <img src="./assets/Logo.jpeg" alt="Logo" class="logo_imag">
-     </div>
-     <div class="enlaces">
-    <a href="">Inicio</a>
-    <a href="">Catalagos</a>
-    <a href="">Contacto</a> 
-     </div>
-   </nav>
-   <img src="./assets/Cocinas/Diseño cocina.jpeg" alt="Imagen cocina" class="cocina">
-  </header>
-=======
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -29,11 +12,14 @@
         <img src="./assets/Logo.jpeg" alt="Logo" class="logo_imag" />
       </div>
       <div class="enlaces">
-        <a href="">Inicio</a>
-        <a href="">Catalagos</a>
-        <a href="">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogos">Catálogos</a>
+        <a href="#contacto">Contacto</a>
       </div>
     </nav>
+
+    <section id="inicio"></section>
+
     <header>
       <img
         src="./assets/Cocinas/Diseño cocina.jpeg"
@@ -41,14 +27,16 @@
         class="cocina"
       />
     </header>
->>>>>>> 5dbbe4f9f517d551b89c71314795922ae5b4d297
 
-    <div class="container">
-      <h2>Catalogos</h2>
-    </div>
-    <div id="productos" class="grid"></div>
-
+    <section id="catalogos">
+      <div class="container">
+        <h2>Catálogos</h2>
+      </div>
+      <div id="productos" class="grid"></div>
+    </section>
+   
     <div id="footer-container"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </body>
   <script type="module" src="main.js"></script>
 </html>
