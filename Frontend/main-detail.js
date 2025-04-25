@@ -9,7 +9,7 @@ fetch("http://localhost:3000/coarquitec/productos/")
     console.log("Soy el producto: ", producto);
 
     if (producto) {
-      document.getElementById("detail-img").src = producto.image;
+      document.getElementById("detail-img").src = `http://localhost:3000/coarquitec/productos/images/${producto.image}`;
       document.getElementById("detail-img").alt = producto.title;
       document.getElementById("detail-title").textContent = producto.title;
       document.getElementById("detail-desc").textContent = producto.description;

@@ -24,10 +24,12 @@ fetch("http://localhost:3000/coarquitec/productos/")
           : producto.description;
 
       card.innerHTML = `
-        <img src="${producto.image}" alt="${producto.title}">
+        <img src="http://localhost:3000/coarquitec/productos/images/${producto.image}" alt="${producto.title}">
+        <section>
         <h2>${producto.title}</h2>
         <p class="descripcion-limitada">${descripcionLimitada}</p>
-        
+        </section>
+     
 
         <div> 
         <button data-id="${producto.id}">Ver más</button>  

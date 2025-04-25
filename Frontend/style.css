@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 30px;
   }
   
@@ -12,7 +12,7 @@
     /* border: 1px solid green; */
     border-radius: 15px;
     width: 350px;
-    height: 450px;
+    height: 500px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
@@ -29,24 +29,41 @@
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-  }
+    margin-top: 20px;
+}
+
+.card section {
+  /* border: 1px solid red; */
+  padding: 5px;
+}
+
+.card h2 {
+  color: #1a1a1a;
+}
   
   button {
-    height: 30px;
-    width: 90px;
+    height: 40px;
+    width: 150px;
     margin-left: 10px;
-    border: 1px solid black;
+    border: 1px solid #4DE86E;
     border-radius: 10px;
-    background-color: #777799;
-    color: #ffffff;
+    background-color: #4DE86E;
+    color: #1a1a1a;
     font-weight: bold;
-  }
+    font-size: 18px;
+}
+
+button:hover {
+  color: #000000;
+}
   
   .container h2 {
     margin-left: 20px;
     font-weight: bold;
     font-size: 32px;
-  }
+    color: #1a1a1a;
+  z-index: 10;
+}
   
   /* Para el nav */
   
@@ -65,7 +82,9 @@
     position: fixed;
     z-index: 1000;
     height: 110px;
-  }
+    height: 110px;
+  transition: width 0.3s ease;
+}
   
   .logo_imag {
     height: 80px;
@@ -84,15 +103,25 @@
   
   .enlaces a {
     text-decoration: none;
-    color: black;
+    color: #333 ;
     font-weight: bold;
     padding: 20px;
   }
   
+.enlaces a:hover {
+  color: #1a1a1a;
+}
+
   .cocina {
     width: 100%;
     display: block;
     margin: 0;
     padding: 0;
     position: relative;
-  }
+    opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+.cocina:hover {
+  opacity: 1;
+}
