@@ -1,3 +1,7 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .contenedor-cards {
     /* border: 1px solid red; */
     display: flex;
@@ -12,7 +16,7 @@
     /* border: 1px solid green; */
     border-radius: 15px;
     width: 350px;
-    height: 500px;
+    height: 480px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
@@ -39,6 +43,16 @@
 
 .card h2 {
   color: #1a1a1a;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.descripcion-limitada {
+  /* border: 1px solid red; */
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }
   
   button {
@@ -68,6 +82,7 @@ button:hover {
   /* Para el nav */
   
   .navegador {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,8 +97,6 @@ button:hover {
     position: fixed;
     z-index: 1000;
     height: 110px;
-    height: 110px;
-  transition: width 0.3s ease;
 }
   
   .logo_imag {
@@ -95,17 +108,13 @@ button:hover {
     background: transparent;
   }
   
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 80px;
-  }
   
   .enlaces a {
     text-decoration: none;
     color: #333 ;
     font-weight: bold;
     padding: 20px;
+    transition: width 0.3s ease;
   }
   
 .enlaces a:hover {
@@ -114,12 +123,10 @@ button:hover {
 
   .cocina {
     width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
+    /* display: block; */
     position: relative;
     opacity: 0.8;
-  transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 .cocina:hover {
